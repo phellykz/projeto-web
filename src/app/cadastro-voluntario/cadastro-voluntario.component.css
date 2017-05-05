@@ -1,0 +1,13 @@
+
+.banner-cabecalho .titulo-banner {
+    margin-top: 65px;
+    margin-left: 61%;
+    position: absolute;
+    color: white;
+    z-index: 99;
+    font-size: 47px;
+}
+
+.banner-cabecalho .image-bck img {
+    
+}
