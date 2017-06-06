@@ -1,0 +1,42 @@
+
+figure.foto-legenda figcaption label{
+    color: #000;
+    font-size: 12pt;
+}
+
+figure.foto-legenda figcaption textarea {     
+     color: #000;
+     font-size: 12pt;
+}
+
+figure.foto-legenda figcaption input {
+     color: #000;
+     font-size: 12pt;
+}
+
+/*
+.banner-cabecalho .titulo-banner {
+    margin-top: 0px;
+    margin-left: 5%;
+    margin-right: 60%;
+    position: relative;
+    color: black;
+    z-index: 99;
+    font-size: 20px;
+    border: black;
+}
+
+.image-bck{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.input-field label {
+     color: #000;
+     font-size: 12pt;
+}
+
+*/
+
+

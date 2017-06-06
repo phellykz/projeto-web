@@ -1,0 +1,108 @@
+
+<div *ngIf="isLoaded">
+
+<figure class="foto-legenda">
+    <img src="/src/app/img/little-girl-1894125_1920.jpg" alt="banner-image">
+  <figcaption>
+    
+        <h3>
+          <b>
+            Editar cadastro:
+          </b>
+        </h3>
+        <br>
+
+            <div *ngIf="errorMensagem" class="alert alert-danger" role="alert">
+                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                <span class="sr-only">Error:</span>
+                {{errorMensagem}}
+            </div>
+
+            <div *ngIf="sucessoMensagem" class="alert alert-success" role="alert">
+                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                <span class="sr-only">Sucesso:</span>
+                {{sucessoMensagem}}
+            </div>
+
+  <div class="row">
+    <form class="col s12">        
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">perm_identity</i>
+          <input [(ngModel)]="voluntario.nome" name="nome" placeholder="Digite seu nome" id="nome" type="text" class="validate" required>
+          <label class="active" for="nome">Nome:</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">phone</i>
+          <input [(ngModel)]="voluntario.telefone" name="telefone" placeholder="Digite seu telefone" id="telefone" type="text" class="validate">
+          <label class="active" for="telefone">Telefone:</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">location_on</i>
+          <input [(ngModel)]="voluntario.endereco.rua" name="rua" placeholder="Informe sua rua" id="rua" type="text" class="validate">
+          <label class="active" for="rua">Rua:</label>
+        </div>
+        <div class="input-field col s3">
+          <i class="material-icons prefix">location_on</i>
+          <input [(ngModel)]="voluntario.endereco.numero" name="numero" placeholder="Informe o numero" id="numero" type="number" class="validate">
+          <label class="active" for="numero">Numero:</label>
+        </div>
+        <div class="input-field col s3">
+          <i class="material-icons prefix">location_on</i>
+          <input [(ngModel)]="voluntario.endereco.complemento" name="complemento" placeholder="Informe o complemento" id="complemento" type="text" class="validate">
+          <label class="active" for="complemento">Complemento:</label>
+        </div> 
+        <div class="input-field col s6">
+          <i class="material-icons prefix">location_on</i>
+          <input [(ngModel)]="voluntario.endereco.cep" name="cep" placeholder="Informe o cep" id="cep" type="number" class="validate">
+          <label class="active" for="cep">CEP:</label>
+        </div> 
+        <div class="input-field col s6">
+          <i class="material-icons prefix">location_on</i>
+          <input [(ngModel)]="voluntario.endereco.bairro" name="bairro" placeholder="Informe seu bairro" id="bairro" type="text" class="validate">
+          <label class="active" for="bairro">Bairro:</label>
+        </div> 
+        <div class="input-field col s6">
+          <i class="material-icons prefix">location_on</i>
+          <input [(ngModel)]="voluntario.endereco.cidade" name="cidade" placeholder="Informe sua cidade" id="cidade" type="text" class="validate">
+          <label class="active" for="cidade">Cidade:</label>
+        </div> 
+        <div class="input-field col s6">
+          <i class="material-icons prefix">location_on</i>
+          <input [(ngModel)]="voluntario.endereco.estado" name="estado" placeholder="Informe seu estado" id="estado" type="text" class="validate">
+          <label class="active" for="estado">Estado:</label>
+        </div>
+        <div class="input-field col s12">
+          <i class="material-icons prefix">mode_edit</i>
+          <textarea [(ngModel)]="voluntario.sobre" name="sobre" placeholder="nos diga algo"id="sobre" class="materialize-textarea"></textarea>
+          <label class="active" for="sobre">Nos diga algo sobre você: </label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">email</i>
+          <input [(ngModel)]="voluntario.email" name="email" placeholder="Digite seu email" id="email" type="email" disabled="true" class="validate">
+          <label class="active" for="email">E-mail</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">vpn_key</i>
+          <input [(ngModel)]="voluntario.senha" name="senha" placeholder="Digite sua senha" id="senha" type="password" class="validate">
+          <label class="active" for="senha">Senha:</label>
+        </div>
+        <div class="input-field col s5">
+          <i class="material-icons prefix">vpn_key</i>
+          <input [(ngModel)]="confirmeSenha" name="confirmeSenha" placeholder="Digite a senha" id="confirmeSenha" type="password" class="validate">
+          <label class="active" for="confirmeSenha">Confirme senha:</label>
+        </div> 
+        
+      </div>
+    </form>
+  </div>
+      
+        <button class="btn waves-effect waves-light" 
+          type="submit" name="action" (click)="atualizar()" >Atualizar
+          <i class="material-icons right">send</i>
+        </button> 
+  </figcaption>
+</figure>
+
+
+</div>

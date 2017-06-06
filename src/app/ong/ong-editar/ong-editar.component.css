@@ -1,0 +1,31 @@
+
+figure.foto-legenda{
+    position: relative;
+}
+
+figure.foto-legenda img{    
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcaption{
+    position: absolute;
+    top: 0px;
+    margin-left: 5%;
+    margin-right: 60%;    
+}
+
+figure.foto-legenda figcaption label{
+    color: #000;
+    font-size: 12pt;
+}
+
+figure.foto-legenda figcaption textarea {     
+     color: #000;
+     font-size: 12pt;
+}
+
+figure.foto-legenda figcaption input {
+     color: #000;
+     font-size: 12pt;
+}

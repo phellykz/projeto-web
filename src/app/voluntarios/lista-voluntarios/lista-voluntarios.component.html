@@ -1,0 +1,33 @@
+
+
+<figure class="foto">
+  <img src="src/app/img/children-of-uganda-2300075_1920.jpg">
+  <figcaption>    
+<h2>
+  Lista de voluntários:
+</h2>
+
+    <div class="table">  
+      <table class="bordered">
+        <thead>
+          <tr>
+              <th>Nome</th>
+              <th>Telefone</th>
+              <th>E-mail</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let voluntario of voluntarios | async">
+            <td>{{voluntario.nome}}</td>            
+            <td>{{voluntario.telefone}}</td>
+            <td>{{voluntario.email}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </figcaption>
+</figure>
+
+
+

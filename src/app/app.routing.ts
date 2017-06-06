@@ -1,8 +1,9 @@
+/*
 import { Routes, RouterModule } from '@angular/router'; 
 import { ModuleWithProviders } from "@angular/core/core";
 
-import { ListaVoluntariosComponent } from './lista-voluntarios/lista-voluntarios.component';
-import { CadastroVoluntarioComponent } from './cadastro-voluntario/cadastro-voluntario.component';
+import { ListaVoluntariosComponent } from './voluntarios/lista-voluntarios/lista-voluntarios.component';
+import { CadastroVoluntarioComponent } from './voluntarios/cadastro-voluntario/cadastro-voluntario.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 
@@ -14,3 +15,4 @@ const APP_ROUTES: Routes = [
 ]
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(APP_ROUTES);
+*/

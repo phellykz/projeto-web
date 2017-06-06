@@ -1,12 +1,54 @@
-<div class="banner-cabecalho">
-  <div class="titulo-banner">
 
-      <p>
-      login works!
-      </p>
+<figure class="foto-login">
+    <img src="/src/app/img/clasped-hands-541849_1920.jpg" alt="banner-image">
+  <figcaption class="login">
 
+      <h3><b> Login </b></h3>
+  <br>
+
+    <div *ngIf="errorMensagem" class="alert alert-danger" role="alert">
+        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+        <span class="sr-only">Error:</span>
+        {{errorMensagem}}
+    </div>
+
+ 
+<form class="col s12">
+
+  <div class="row">
+    <div class="input-field col s12">
+      <input [(ngModel)]="usuario.email" placeholder="Digite o email" name="email" id="email" type="text" required>
+      <label class="active" for="email">Usuário</label>
+    </div>
   </div>
-  <div class="image-bck">
-    <img src="/src/app/img/clasped-hands-541849_1920.jpg" alt="banner-image"> 
+  
+  <div class="row">
+    <div class="input-field col s12">
+      <input [(ngModel)]="usuario.password" placeholder="Digite a senha" value="" name="password" id="password" type="password" required>
+      <label class="active" for="password">Senha</label>
+    </div>
   </div>
-</div>
+
+
+  <div id="entrar" class="btn-group pull-right">
+    <button type="button" class="btn btn-success" (click)="fazerLogin()">Entrar</button>
+  </div>
+
+  </form>
+  </figcaption>
+</figure>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+

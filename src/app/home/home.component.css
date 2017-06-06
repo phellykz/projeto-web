@@ -1,12 +1,86 @@
-.banner-cabecalho .titulo-banner {
-    margin-top: 65px;
-    margin-left: 61%;
-    position: absolute;
-    color: white;
-    z-index: 99;
-    font-size: 47px;
+
+div.slider ul.slides li img{
+  width: 100%;
+  height: 150%;
 }
 
-.banner-cabecalho .image-bck img {
-    
+div.slider ul.slides li div.caption h2.br{
+  color: white;
 }
+
+div.slider ul.slides li div.caption h4.bra{
+  color: white;
+}
+
+div.slider ul.slides li div.caption h4 h4.bra{
+  color: white;
+}
+
+div.slider ul.slides li div.caption h2{
+  color: black;
+}
+
+div.slider ul.slides li div.caption h4{
+  color: black;
+}
+
+form.cont{
+  position: absolute;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.video{
+  margin-left: 2%;
+  width: 100%;
+  height: 100%;
+}
+
+.texto{
+  width: 50%;
+  height: 50%;
+}
+
+img{ 
+   
+  width: 100%;
+  height: 100%;
+}
+
+h3,h4,h2{
+  margin-left: 5%;
+}
+
+h4.text{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+figure.foto{
+    position: relative;
+}
+
+figure.foto img{
+    margin-left: 2%;
+    width: 96%;
+    height: 100%;
+}
+
+figure.foto figcaption p.titulo{
+    position: absolute;
+    top: 205px;
+    font-size: 32px;
+    text-align: center;
+    margin-left: 41%;   
+}
+
+figure.foto figcaption h4{
+    position: absolute;
+    text-indent: 40px;
+    top: 310px;
+    margin-left: 17%;
+    width: 70%;
+}
+
+
+

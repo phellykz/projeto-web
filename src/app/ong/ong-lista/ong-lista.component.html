@@ -1,0 +1,32 @@
+
+<figure class="foto">
+  <img src="src/app/img/children-of-uganda-2300075_1920.jpg">
+  <figcaption>    
+<h2>
+  Lista de ONGs
+</h2>
+
+    <div class="table">  
+      <table class="bordered">
+        <thead>
+          <tr>
+              <th>Nome</th>
+              <th>Atuação</th>
+              <th>Telefone</th>
+              <th>E-mail</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let ong of ongs | async">
+            <td>{{ong.nome}}</td>
+            <td>{{ong.atuacao}}</td>
+            <td>{{ong.telefone}}</td>
+            <td>{{ong.email}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </figcaption>
+</figure>
+

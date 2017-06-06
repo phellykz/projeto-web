@@ -1,0 +1,24 @@
+
+figure.foto{
+    position: relative;
+}
+
+figure.foto img{    
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto figcaption{
+    position: absolute;
+    top: 0px;
+    margin-left: 5%;
+    margin-right: 5%;    
+}
+
+figure.foto figcaption .table .bordered{
+    background-color: rgba(255,255,255,.3);
+    width: 280%;
+    height: 250%;
+    margin-left: 5%;
+    margin-right: 5%;    
+}

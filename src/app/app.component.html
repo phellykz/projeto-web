@@ -1,13 +1,36 @@
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <nav >
+    <div class="nav-wrapper">          
+      
+          <div *ngIf="mostrarMenuOng">
+            <ul id="nav-ong" class="left hide-on-med-and-down">
+              <a routerLink='ong' class="brand-logo right">VOLUNTARIOS.COM</a>
+              <li routerLinkActive='active'><a routerLink='/ong-editar'>Editar cadastro</a></li>
+              <li routerLinkActive='active'><a routerLink='/lista-voluntarios'>Listar voluntarios</a></li>
+              <li><a routerLink='' (click)='mostrarMenuOng = false' (click)='mostrarMenu = false' >Sair</a></li>       
+            </ul>
+          </div>
 
-  <nav>
-    <div class="nav-wrapper">
-      <a routerLink='' class="brand-logo right">VOLUNTARIOS.COM</a>
-      <ul id="nav-mobile" class="left hide-on-med-and-down">
-        <li routerLinkActive='active'><a routerLink='/cadastro-voluntario'>Cadastro voluntario</a></li>
-        <li><a routerLink='/lista-voluntarios'>Listar voluntarios</a></li>
-        <li><a routerLink='/login'>Login</a></li>
-      </ul>
+          <div *ngIf="mostrarMenuVoluntario" >
+            <ul id="nav-voluntario" class="left hide-on-med-and-down">
+              <a routerLink='voluntario' class="brand-logo right">VOLUNTARIOS.COM</a>
+              <li routerLinkActive='active'><a routerLink='/voluntario-editar'>Editar cadastro</a></li>
+              <li routerLinkActive='active'><a routerLink='/ong-lista'>Listar ONGs</a></li>
+              <li><a type="button" routerLink='' (click)='mostrarMenuVoluntario = false' (click)='mostrarMenu = false' >Sair</a></li>
+            </ul>
+          </div>
+
+          <div *ngIf='!mostrarMenu'>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+              <li><a routerLink='/login'>Login</a></li>
+              <a routerLink='' class="brand-logo right">VOLUNTARIOS.COM</a>
+              <li routerLinkActive='active'><a routerLink='/cadastro-voluntario'>Cadastrar voluntario</a></li>
+              <li routerLinkActive='active'><a routerLink='/ong-cadastro'>Cadastrar ONG</a></li>
+            </ul>
+          </div>
+
     </div>
   </nav>
 
-<router-outlet></router-outlet>  
+
+    <router-outlet></router-outlet>  
